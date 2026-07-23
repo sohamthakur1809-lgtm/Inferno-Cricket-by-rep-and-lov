@@ -1,0 +1,17 @@
+# Supply-chain safety: require npm versions to be at least 1 day old.
+# See original notes; do not disable.
+minimumReleaseAge: 1440
+
+packages:
+  - artifacts/*
+  - lib/*
+
+catalog:
+  drizzle-orm: ^0.45.2
+  '@types/node': ^25.3.3
+  zod: ^3.25.76
+
+autoInstallPeers: false
+
+onlyBuiltDependencies:
+  - esbuild
